@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M12 Assignment - The Music Player Application</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/player.js" defer></script>
+</head>
+<body>
+    <div class="music-player">
+        <h1>The Music Player</h1>
+        <div>
+            <svg width="100px" height="100px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000" class="bi bi-music-note-list">
+                <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </div>
+        
+        <!-- ADD DROP DOWN MENU -->
+        <select id="album-list" name="album-list"></select>
+  
+        <!-- ADD PLAY BUTTON -->
+        <button id="play-album" class="play-button">
+            <svg fill="#000000" height="75px" width="75px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 485.74 485.74" xml:space="preserve">
+                <g>
+                    <g>
+                        <path d="M242.872,0C108.732,0,0.004,108.736,0.004,242.864c0,134.14,108.728,242.876,242.868,242.876
+                            c134.136,0,242.864-108.736,242.864-242.876C485.736,108.736,377.008,0,242.872,0z M338.412,263.94l-134.36,92.732
+                            c-16.776,11.588-30.584,4.248-30.584-16.316V145.38c0-20.556,13.808-27.9,30.584-16.312l134.32,92.732
+                            C355.136,233.384,355.176,252.348,338.412,263.94z"/>
+                    </g>
+                </g>
+            </svg>
+        </button>
+
+        <!-- ADD SHOW FAVORITE ALBUM BUTTON -->
+        <div class="favorite-section">
+            <div class="favorite-section-item">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>.cls-1{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-width:1.91px;}.cls-2{fill:#000000;}</style>
+                    </defs>
+                    <circle class="cls-1" cx="8.15" cy="19.63" r="2.87"/>
+                    <circle class="cls-1" cx="19.63" cy="16.76" r="2.87"/>
+                    <polyline class="cls-1" points="22.5 16.76 22.5 2.41 11.02 5.28 11.02 19.63"/>
+                    <line class="cls-1" x1="22.5" y1="6.24" x2="11.02" y2="9.11"/>
+                    <path class="cls-2" d="M3.9,5.28a1.28,1.28,0,0,0-1.06.57A1.28,1.28,0,0,0,.5,6.56c0,1.91,2.34,2.55,2.34,2.55s2.34-.64,2.34-2.55A1.28,1.28,0,0,0,3.9,5.28Z"/>
+                    <path class="cls-2" d="M8.07,10.41a1,1,0,0,0-.87.47,1,1,0,0,0-1.92.58c0,1.56,1.92,2.08,1.92,2.08S9.11,13,9.11,11.46A1,1,0,0,0,8.07,10.41Z"/>
+                    <path class="cls-2" d="M8.33.5a.79.79,0,0,0-.66.35.78.78,0,0,0-1.43.43c0,1.18,1.43,1.57,1.43,1.57s1.44-.39,1.44-1.57A.78.78,0,0,0,8.33.5Z"/>
+                </svg>
+            </div>
+            <div id="favoriteAlbum" class="favorite-section-item"></div>
+        </div>
+        <button id="favorite-album" class="favorite-button">Show my favorite album</button>
+        
+    </div>
+</body>
+</html>
